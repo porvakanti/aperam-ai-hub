@@ -1,0 +1,203 @@
+# AI Academy Learning Paths Configuration
+# This file defines course structure, content, and progression
+
+learning_paths:
+  - id: "genai_fundamentals"
+    title: "🤖 GenAI Fundamentals"
+    level: "Beginner"
+    duration: "2 hours"
+    description: "Introduction to Generative AI concepts and practical applications"
+    prerequisite: null
+    topics:
+      - "Introduction to Generative AI"
+      - "Understanding Large Language Models"
+      - "Prompt Engineering Basics"
+      - "Use Case Identification"
+      - "Ethical Considerations"
+    modules:
+      - id: "genai_intro"
+        title: "What is Generative AI?"
+        duration: "30 minutes"
+        content_type: "video"
+        interactive: false
+        
+      - id: "llm_basics"
+        title: "Large Language Models Explained"
+        duration: "30 minutes"
+        content_type: "interactive"
+        interactive: true
+        
+      - id: "prompt_engineering"
+        title: "Prompt Engineering Workshop"
+        duration: "45 minutes"
+        content_type: "hands_on"
+        interactive: true
+        
+      - id: "use_cases"
+        title: "Identifying AI Use Cases"
+        duration: "30 minutes"
+        content_type: "case_study"
+        interactive: true
+        
+      - id: "ethics"
+        title: "AI Ethics and Responsible AI"
+        duration: "15 minutes"
+        content_type: "reading"
+        interactive: false
+    
+  - id: "agentic_ai_systems"
+    title: "🔗 Agentic AI Systems"
+    level: "Intermediate"
+    duration: "4 hours"
+    description: "Building and orchestrating AI agents for complex workflows"
+    prerequisite: "genai_fundamentals"
+    topics:
+      - "Agent Architecture"
+      - "Multi-Agent Systems"
+      - "MCP Protocol"
+      - "Tool Integration"
+      - "Agent Orchestration"
+    modules:
+      - id: "agent_architecture"
+        title: "Understanding AI Agents"
+        duration: "45 minutes"
+        content_type: "video"
+        interactive: false
+        
+      - id: "multi_agent_systems"
+        title: "Multi-Agent Coordination"
+        duration: "60 minutes"
+        content_type: "interactive"
+        interactive: true
+        
+      - id: "mcp_protocol"
+        title: "Model Context Protocol (MCP)"
+        duration: "45 minutes"
+        content_type: "hands_on"
+        interactive: true
+        
+      - id: "tool_integration"
+        title: "Agent Tool Integration"
+        duration: "60 minutes"
+        content_type: "hands_on"
+        interactive: true
+        
+      - id: "orchestration"
+        title: "Agent Orchestration Workshop"
+        duration: "90 minutes"
+        content_type: "project"
+        interactive: true
+    
+  - id: "ai_manufacturing"
+    title: "🏭 AI for Manufacturing"
+    level: "Advanced"
+    duration: "6 hours"
+    description: "Specialized AI applications in manufacturing and steel industry"
+    prerequisite: "agentic_ai_systems"
+    topics:
+      - "Predictive Maintenance"
+      - "Quality Control AI"
+      - "Supply Chain AI"
+      - "Process Optimization"
+      - "Digital Twins"
+    modules:
+      - id: "predictive_maintenance"
+        title: "Predictive Maintenance Systems"
+        duration: "90 minutes"
+        content_type: "case_study"
+        interactive: true
+        
+      - id: "quality_control"
+        title: "AI-Powered Quality Control"
+        duration: "90 minutes"
+        content_type: "hands_on"
+        interactive: true
+        
+      - id: "supply_chain"
+        title: "Supply Chain Optimization"
+        duration: "90 minutes"
+        content_type: "simulation"
+        interactive: true
+        
+      - id: "process_optimization"
+        title: "Manufacturing Process AI"
+        duration: "90 minutes"
+        content_type: "project"
+        interactive: true
+        
+      - id: "digital_twins"
+        title: "AI-Enhanced Digital Twins"
+        duration: "90 minutes"
+        content_type: "advanced"
+        interactive: true
+
+quick_courses:
+  - id: "prompt_engineering_101"
+    title: "Prompt Engineering 101"
+    duration: "30 minutes"
+    description: "Quick introduction to effective prompt writing"
+    category: "basics"
+    
+  - id: "ai_ethics_business"
+    title: "AI Ethics for Business"
+    duration: "45 minutes"
+    description: "Ethical considerations in business AI deployment"
+    category: "governance"
+    
+  - id: "first_agent"
+    title: "Building Your First Agent"
+    duration: "60 minutes"
+    description: "Hands-on guide to creating a simple AI agent"
+    category: "development"
+    
+  - id: "ai_roi"
+    title: "AI ROI Measurement"
+    duration: "30 minutes"
+    description: "Measuring return on investment for AI projects"
+    category: "business"
+
+certifications:
+  - id: "genai_certified"
+    title: "GenAI Fundamentals Certified"
+    requirements:
+      - "Complete genai_fundamentals path"
+      - "Pass assessment with 80% score"
+      - "Submit practical project"
+    badge_image: "genai_cert.png"
+    
+  - id: "agent_architect"
+    title: "AI Agent Architect"
+    requirements:
+      - "Complete agentic_ai_systems path"
+      - "Pass advanced assessment"
+      - "Build multi-agent system"
+    badge_image: "agent_arch_cert.png"
+    
+  - id: "manufacturing_ai_expert"
+    title: "Manufacturing AI Expert"
+    requirements:
+      - "Complete ai_manufacturing path"
+      - "Pass industry-specific assessment"
+      - "Complete capstone project"
+    badge_image: "manufacturing_cert.png"
+
+# Content delivery configuration
+content_delivery:
+  video_platform: "internal"  # internal, youtube, vimeo
+  interactive_platform: "streamlit"
+  hands_on_environment: "jupyter"
+  assessment_tool: "custom"
+  
+# Progress tracking
+progress_tracking:
+  save_progress: true
+  resume_capability: true
+  time_tracking: true
+  completion_certificates: true
+  
+# Personalization
+personalization:
+  skill_assessment: true
+  adaptive_learning: false  # Future feature
+  recommendation_engine: false  # Future feature
+  learning_analytics: true

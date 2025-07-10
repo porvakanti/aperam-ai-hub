@@ -1,0 +1,219 @@
+/* Aperam AI Hub - Main Stylesheet */
+/* Brand Colors: Purple (#490B42), Orange (#F1511B) */
+
+/* Main Header Component */
+.main-header {
+    background: linear-gradient(90deg, #490B42 0%, #F1511B 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.main-header h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.main-header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Demo Cards */
+.demo-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.demo-card:hover {
+    transform: translateY(-2px);
+    border-color: #F1511B;
+}
+
+.demo-card h4 {
+    color: #490B42;
+    margin-top: 0;
+}
+
+/* Agent Cards */
+.agent-card {
+    background: linear-gradient(135deg, #490B42 0%, #F1511B 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.agent-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.agent-card p {
+    margin: 0.5rem 0;
+    opacity: 0.9;
+}
+
+/* Agent Tiles */
+.agent-tile {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid #490B42;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(73,11,66,0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.agent-tile:hover {
+    border-color: #F1511B;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(241,81,27,0.2);
+}
+
+.agent-tile h2 {
+    color: #490B42;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.agent-tile h3 {
+    color: #490B42;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.agent-tile p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Status Badges */
+.live-badge {
+    background: #28a745;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.poc-badge {
+    background: #17a2b8;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #490B42;
+}
+
+.text-secondary {
+    color: #F1511B;
+}
+
+.bg-primary {
+    background-color: #490B42;
+    color: white;
+}
+
+.bg-secondary {
+    background-color: #F1511B;
+    color: white;
+}
+
+/* Custom Streamlit Overrides */
+.stButton > button {
+    background-color: #490B42;
+    border-color: #490B42;
+    color: white;
+}
+
+.stButton > button:hover {
+    background-color: #F1511B;
+    border-color: #F1511B;
+    color: white;
+}
+
+.stSelectbox > div > div {
+    border-color: #490B42;
+}
+
+.stTextInput > div > div > input {
+    border-color: #490B42;
+}
+
+.stTextArea > div > div > textarea {
+    border-color: #490B42;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .main-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .agent-tile {
+        margin: 0.5rem;
+        padding: 1.5rem;
+    }
+    
+    .agent-tile h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Dark mode support (future) */
+@media (prefers-color-scheme: dark) {
+    .demo-card {
+        background: #2d2d2d;
+        color: white;
+        border-color: #555;
+    }
+    
+    .agent-tile {
+        background: #2d2d2d;
+        color: white;
+        border-color: #490B42;
+    }
+    
+    .agent-tile h2,
+    .agent-tile h3 {
+        color: #F1511B;
+    }
+}

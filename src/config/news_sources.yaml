@@ -1,0 +1,190 @@
+# News Sources Configuration
+# This file defines RSS feeds and API sources for AI news aggregation
+
+primary_sources:
+  - name: "Anthropic Blog"
+    id: "anthropic_blog"
+    type: "rss"
+    url: "https://anthropic.com/news/rss"
+    priority: "high"
+    category: "AI Research"
+    refresh_interval: 300  # 5 minutes
+    
+  - name: "OpenAI Blog"
+    id: "openai_blog"
+    type: "rss"
+    url: "https://openai.com/blog/rss"
+    priority: "high"
+    category: "AI Research"
+    refresh_interval: 300
+    
+  - name: "Google AI Blog"
+    id: "google_ai_blog"
+    type: "rss"
+    url: "https://ai.googleblog.com/feeds/posts/default"
+    priority: "high"
+    category: "AI Research"
+    refresh_interval: 300
+    
+  - name: "Microsoft AI Blog"
+    id: "microsoft_ai_blog"
+    type: "rss"
+    url: "https://blogs.microsoft.com/ai/feed/"
+    priority: "high"
+    category: "AI Research"
+    refresh_interval: 300
+
+industry_sources:
+  - name: "MIT Technology Review AI"
+    id: "mit_tech_review"
+    type: "rss"
+    url: "https://www.technologyreview.com/feed/"
+    priority: "medium"
+    category: "Industry News"
+    refresh_interval: 600  # 10 minutes
+    
+  - name: "VentureBeat AI"
+    id: "venturebeat_ai"
+    type: "rss"
+    url: "https://venturebeat.com/ai/feed/"
+    priority: "medium"
+    category: "Industry News"
+    refresh_interval: 600
+    
+  - name: "TechCrunch AI"
+    id: "techcrunch_ai"
+    type: "rss"
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    priority: "medium"
+    category: "Industry News"
+    refresh_interval: 600
+
+research_sources:
+  - name: "arXiv AI"
+    id: "arxiv_ai"
+    type: "api"
+    url: "https://export.arxiv.org/api/query"
+    priority: "low"
+    category: "Research Papers"
+    refresh_interval: 3600  # 1 hour
+    query_params:
+      search_query: "cat:cs.AI"
+      max_results: 10
+      
+  - name: "Google Scholar"
+    id: "google_scholar"
+    type: "api"
+    url: "https://serpapi.com/search"
+    priority: "low"
+    category: "Research Papers"
+    refresh_interval: 3600
+    query_params:
+      engine: "google_scholar"
+      q: "artificial intelligence"
+      num: 10
+
+social_sources:
+  - name: "Reddit AI"
+    id: "reddit_ai"
+    type: "api"
+    url: "https://www.reddit.com/r/artificial/hot.json"
+    priority: "low"
+    category: "Community"
+    refresh_interval: 1800  # 30 minutes
+    
+  - name: "Hacker News AI"
+    id: "hackernews_ai"
+    type: "api"
+    url: "https://hacker-news.firebaseio.com/v0/topstories.json"
+    priority: "low"
+    category: "Community"
+    refresh_interval: 1800
+
+enterprise_sources:
+  - name: "IBM AI"
+    id: "ibm_ai"
+    type: "rss"
+    url: "https://www.ibm.com/blogs/watson/feed/"
+    priority: "medium"
+    category: "Enterprise AI"
+    refresh_interval: 600
+    
+  - name: "AWS AI"
+    id: "aws_ai"
+    type: "rss"
+    url: "https://aws.amazon.com/blogs/machine-learning/feed/"
+    priority: "medium"
+    category: "Enterprise AI"
+    refresh_interval: 600
+    
+  - name: "Azure AI"
+    id: "azure_ai"
+    type: "rss"
+    url: "https://azure.microsoft.com/en-us/blog/topics/ai-machine-learning/feed/"
+    priority: "medium"
+    category: "Enterprise AI"
+    refresh_interval: 600
+
+# News processing configuration
+processing:
+  max_articles_per_source: 20
+  content_extraction: true
+  sentiment_analysis: false  # Future feature
+  duplicate_detection: true
+  relevance_scoring: true
+  
+# Content filtering
+filters:
+  keywords_include:
+    - "artificial intelligence"
+    - "machine learning"
+    - "deep learning"
+    - "neural networks"
+    - "generative AI"
+    - "large language models"
+    - "LLM"
+    - "GPT"
+    - "Claude"
+    - "Gemini"
+    - "enterprise AI"
+    - "industrial AI"
+    - "manufacturing AI"
+    - "steel industry"
+    - "materials science"
+    
+  keywords_exclude:
+    - "cryptocurrency"
+    - "bitcoin"
+    - "blockchain"
+    - "NFT"
+    - "web3"
+    
+  language: "en"
+  min_content_length: 100
+  
+# Categories for news organization
+categories:
+  - id: "ai_research"
+    name: "AI Research"
+    description: "Latest research and breakthroughs"
+    priority: "high"
+    
+  - id: "industry_news"
+    name: "Industry News"
+    description: "Business and industry developments"
+    priority: "medium"
+    
+  - id: "enterprise_ai"
+    name: "Enterprise AI"
+    description: "Enterprise AI solutions and case studies"
+    priority: "high"
+    
+  - id: "research_papers"
+    name: "Research Papers"
+    description: "Academic research and publications"
+    priority: "low"
+    
+  - id: "community"
+    name: "Community"
+    description: "Community discussions and insights"
+    priority: "low"

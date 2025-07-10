@@ -1,0 +1,112 @@
+# AI Agents Configuration
+# This file defines available AI agents, their capabilities, and integration details
+
+live_agents:
+  - name: "R&D Research Assistant"
+    id: "rd_research_assistant"
+    description: "Specialized in materials research and alloy development"
+    category: "Production"
+    status: "Active"
+    provider: "Vertex AI"
+    model: "Gemini Pro"
+    url: "https://vertex-ai-agent.com/rd"
+    capabilities:
+      - "Materials science expertise"
+      - "Alloy composition analysis"
+      - "Research paper summarization"
+      - "Technical documentation"
+    uptime: "99.8%"
+    response_time: "2.3s"
+    cost_per_query: "$0.05"
+    
+  - name: "Supply Chain Optimizer"
+    id: "supply_chain_optimizer"
+    description: "Demand forecasting and inventory management"
+    category: "Development"
+    status: "Coming Soon"
+    provider: "OpenAI"
+    model: "GPT-4 Turbo"
+    url: "https://future-agent.com/supply"
+    capabilities:
+      - "Demand forecasting"
+      - "Inventory optimization"
+      - "Risk assessment"
+      - "Cost analysis"
+    uptime: "N/A"
+    response_time: "N/A"
+    cost_per_query: "$0.08"
+
+  - name: "Quality Control AI"
+    id: "quality_control_ai"
+    description: "Automated defect detection and quality prediction"
+    category: "Development"
+    status: "In Development"
+    provider: "Anthropic"
+    model: "Claude 3.5 Sonnet"
+    url: "https://future-agent.com/quality"
+    capabilities:
+      - "Defect detection"
+      - "Quality prediction"
+      - "Process optimization"
+      - "Compliance monitoring"
+    uptime: "N/A"
+    response_time: "N/A"
+    cost_per_query: "$0.03"
+
+demo_agents:
+  - name: "Document Intelligence"
+    id: "document_intelligence"
+    description: "Multi-modal document analysis and extraction"
+    category: "POC"
+    status: "Demo"
+    capabilities:
+      - "PDF text extraction"
+      - "Image analysis"
+      - "Table extraction"
+      - "Summarization"
+    supported_formats: ["pdf", "txt", "docx", "xlsx", "png", "jpg"]
+    
+  - name: "Steel Specs Assistant"
+    id: "steel_specs_assistant"
+    description: "Natural language steel specification queries"
+    category: "POC"
+    status: "Demo"
+    capabilities:
+      - "Specification lookup"
+      - "Material recommendations"
+      - "Compliance checking"
+      - "Cost estimation"
+    
+  - name: "Predictive Analytics"
+    id: "predictive_analytics"
+    description: "Equipment failure prediction and maintenance scheduling"
+    category: "POC"
+    status: "Demo"
+    capabilities:
+      - "Failure prediction"
+      - "Maintenance scheduling"
+      - "Risk assessment"
+      - "Cost optimization"
+
+agent_categories:
+  - name: "Production"
+    description: "Live, production-ready agents"
+    badge_color: "#28a745"
+    badge_text: "ENTERPRISE READY"
+    
+  - name: "Development"
+    description: "Agents in development phase"
+    badge_color: "#ffc107"
+    badge_text: "IN DEVELOPMENT"
+    
+  - name: "POC"
+    description: "Proof-of-concept demonstrations"
+    badge_color: "#17a2b8"
+    badge_text: "TRY NOW"
+
+integration_settings:
+  timeout: 30
+  retry_attempts: 3
+  error_fallback: true
+  logging: true
+  authentication_required: false  # Will be true for production agents
