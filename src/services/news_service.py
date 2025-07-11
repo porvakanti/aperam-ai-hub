@@ -99,6 +99,11 @@ class NewsService:
                 "url": "http://export.arxiv.org/rss/cs.AI",
                 "category": "Research",
                 "source_name": "ArXiv AI"
+            },
+            "xai_grok": {
+                "url": "https://x.ai/news/rss.xml",
+                "category": "Technology",
+                "source_name": "xAI (Grok)"
             }
         }
     
