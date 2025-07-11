@@ -104,6 +104,101 @@ class NewsService:
                 "url": "https://x.ai/news/rss.xml",
                 "category": "Technology",
                 "source_name": "xAI (Grok)"
+            },
+            "microsoft_ai": {
+                "url": "https://blogs.microsoft.com/feed/category/ai/",
+                "category": "Technology",
+                "source_name": "Microsoft AI"
+            },
+            "meta_ai": {
+                "url": "https://ai.facebook.com/feed/",
+                "category": "Technology",
+                "source_name": "Meta AI"
+            },
+            "aperam_ai": {
+                "url": "https://aperam.com/news/rss.xml",
+                "category": "Industry",
+                "source_name": "Aperam AI"
+            },
+            "steel_industry": {
+                "url": "https://www.steel.org/feed/",
+                "category": "Industry",
+                "source_name": "Steel Industry News"
+            },
+            "mcp_ai": {
+                "url": "https://mcp.ai/feed/",
+                "category": "Technology",
+                "source_name": "MCP AI"
+            },
+            "gemini_ai": {
+                "url": "https://blog.google/products/ai/feed/",
+                "category": "Technology",
+                "source_name": "Google Gemini AI"
+            },
+            "claude_ai": {
+                "url": "https://www.anthropic.com/news/rss.xml",
+                "category": "Technology",
+                "source_name": "Claude AI"
+            },
+            "gpt_ai": {
+                "url": "https://openai.com/blog/rss.xml",
+                "category": "Technology",
+                "source_name": "GPT AI"
+            },
+            "chatgpt_ai": {
+                "url": "https://openai.com/blog/rss.xml",
+                "category": "Technology",
+                "source_name": "ChatGPT AI"
+            },
+            "bert_ai": {
+                "url": "https://ai.googleblog.com/feeds/posts/default",
+                "category": "Technology",
+                "source_name": "BERT AI"
+            },
+            "transformer_ai": {
+                "url": "https://ai.googleblog.com/feeds/posts/default",
+                "category": "Technology",
+                "source_name": "Transformer AI"
+            },
+            "llm_ai": {
+                "url": "https://openai.com/blog/rss.xml",
+                "category": "Technology",
+                "source_name": "LLM AI"
+            },
+            "robotics_ai": {
+                "url": "https://www.roboticsbusinessreview.com/feed/",
+                "category": "Technology",
+                "source_name": "Robotics AI"
+            },
+            "automation_ai": {
+                "url": "https://www.automation.com/rss",
+                "category": "Technology",
+                "source_name": "Automation AI"
+            },
+            "predictive_ai": {
+                "url": "https://www.predictiveanalyticsworld.com/feed/",
+                "category": "Technology",
+                "source_name": "Predictive AI"
+            },
+            "agentic_ai": {
+                "url": "https://www.agentic.ai/feed/",
+                "category": "Technology",
+                "source_name": "Agentic AI"
+            },
+            "ars_technica": {
+                "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+                "category": "Technology",
+                "source_name": "Ars Technica"
+            },
+            "reuters_tech": {
+                "url": "https://www.reuters.com/technology/feed/",
+                "category": "Business",
+                "source_name": "Reuters Tech"
+            },
+            "hacker_news": {
+                "url": "https://hnrss.org/frontpage",
+                "category": "Technology",
+                "source_name": "Hacker News"
             }
         }
     
