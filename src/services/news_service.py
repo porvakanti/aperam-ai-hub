@@ -55,6 +55,21 @@ class NewsService:
                 "category": "Research",
                 "source_name": "Anthropic"
             },
+            "anthropic_engg": {
+                "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml",
+                "category": "Engineering",
+                "source_name": "Anthropic Engineering"
+            },
+            "anthropic_res": {
+                "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml",
+                "category": "Research",
+                "source_name": "Anthropic Research"
+            },
+            "ollama": {
+                "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml",
+                "category": "news",
+                "source_name": "Ollama"
+            },
             "openai": {
                 "url": "https://openai.com/blog/rss.xml", 
                 "category": "Technology",
