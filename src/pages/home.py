@@ -92,6 +92,8 @@ def render_quick_stats():
 def render_news_preview():
     """Render AI news preview section"""
     st.subheader("📰 Latest AI News")
+    news_service.get_breaking_news(category_filter, limit=5)
+    ''' 
     col1, col2 = st.columns([2, 1])
     
     with col1:
@@ -110,6 +112,7 @@ def render_news_preview():
     with col2:
         st.info("**Breaking:** OpenAI releases new o3 reasoning model")
         st.write("*2 hours ago*")
+    '''
 
 def get_home_page_data():
     """Get data for home page (future: from API/database)"""
