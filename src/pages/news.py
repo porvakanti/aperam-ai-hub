@@ -118,16 +118,12 @@ def render_news_page():
 def render_breaking_news_tab(category_filter: List[str], source_filter: List[str], time_filter: str):
     """Render breaking news section"""
     st.markdown("### 🔥 Breaking AI News")
-
-    st.write("DEBUG: About to call news service...")  
     
     # Get breaking news with error handling
     try:
         with st.spinner("Loading latest AI news..."):
             breaking_news = news_service.get_breaking_news(category_filter, limit=10)
         
-        st.write("DEBUG: News service call completed")  
-
         if not breaking_news:
             st.warning("No breaking news available at the moment. Please try refreshing or check your internet connection.")
             return
