@@ -95,7 +95,7 @@ def render_news_preview():
     st.subheader("📰 Latest AI News")
     
     
-    col1 = st.columns([1])
+    col1 = st.columns(1)
     
     with col1:
         # TODO: Replace with real news data
