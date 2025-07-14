@@ -93,7 +93,7 @@ def render_quick_stats():
 def render_news_preview():
     """Render AI news preview section"""
     st.subheader("📰 Latest AI News")
-    news_service.get_breaking_news(category_filter, limit=5)
+    news_service.get_breaking_news("All", limit=5)
     ''' 
     col1, col2 = st.columns([2, 1])
     
