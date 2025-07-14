@@ -93,23 +93,21 @@ def render_quick_stats():
 def render_news_preview():
     """Render AI news preview section"""
     st.subheader("📰 Latest AI News")
-    news_service.get_breaking_news("All", limit=5)
-    ''' 
-    col1, col2 = st.columns([2, 1])
+    
+    
+    col1 = st.columns([1])
     
     with col1:
         # TODO: Replace with real news data
         st.markdown("""
         **🔥 Trending Today:**
-        - Claude 4 Sonnet released with enhanced reasoning capabilities
-        - Google announces Gemini 2.0 with improved multimodal features
-        - Microsoft introduces new AI agents for enterprise automation
         """)
+        news_service.get_breaking_news("All", limit=5)
         
         if st.button("📰 View All AI News", key="home_news"):
             log_user_action("navigation", {"destination": "news", "source": "home_news_preview"})
             navigate_to_page("📰 AI News")
-    
+    ''' 
     with col2:
         st.info("**Breaking:** OpenAI releases new o3 reasoning model")
         st.write("*2 hours ago*")
