@@ -92,10 +92,8 @@ def render_quick_stats():
 
 def render_news_preview():
     """Render AI news preview section"""
-    st.subheader("📰 Latest AI News")
-    
-    
-    col1 = st.columns(1)
+    st.subheader("📰 Latest AI News")    
+    col1, = st.columns(1)
     
     with col1:
         # TODO: Replace with real news data
