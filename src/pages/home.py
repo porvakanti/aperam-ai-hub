@@ -7,6 +7,7 @@ import pandas as pd
 from datetime import datetime
 from ..utils.helpers import navigate_to_page, show_breadcrumb, create_metric_card, log_user_action
 from ..utils.css_loader import get_branded_header_css
+from src.services import news_service
 
 def render_home_page():
     """Render the home page"""
