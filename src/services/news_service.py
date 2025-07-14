@@ -51,7 +51,7 @@ class NewsService:
         """Get RSS feed sources configuration"""
         return {
             "anthropic": {
-                "url": "https://www.anthropic.com/news/feed_anthropic_news.xml",
+                "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic.xml",
                 "category": "Research",
                 "source_name": "Anthropic"
             },
